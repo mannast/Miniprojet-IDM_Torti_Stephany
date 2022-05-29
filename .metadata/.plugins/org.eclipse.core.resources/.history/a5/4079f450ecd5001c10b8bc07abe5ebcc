@@ -1,0 +1,12 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+context ProcessElement
+def: process(): Process =
+	Process.allInstances()
+		->select(p | p.processElements->includes(self))
+		->asSequence()->first()
+
+
+endpackage

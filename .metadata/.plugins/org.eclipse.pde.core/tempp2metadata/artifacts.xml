@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<repository name='file:/home/n7student/eclipse-workspace2/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - artifacts' type='org.eclipse.equinox.p2.artifact.repository.simpleRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1652795429194'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <mappings size='3'>
+    <rule filter='(&amp; (classifier=osgi.bundle))' output='${repoUrl}/plugins/${id}_${version}.jar'/>
+    <rule filter='(&amp; (classifier=binary))' output='${repoUrl}/binary/${id}_${version}'/>
+    <rule filter='(&amp; (classifier=org.eclipse.update.feature))' output='${repoUrl}/features/${id}_${version}.jar'/>
+  </mappings>
+  <artifacts size='3'>
+    <artifact classifier='osgi.bundle' id='fr.n7.petriNet.toTina.ui' version='1.0.0.202205171550'>
+      <properties size='1'>
+        <property name='download.size' value='7823'/>
+      </properties>
+    </artifact>
+    <artifact classifier='org.eclipse.update.feature' id='fr.n7.featureAcceleo' version='1.0.0.202205171550'>
+      <properties size='2'>
+        <property name='download.contentType' value='application/zip'/>
+        <property name='download.size' value='417'/>
+      </properties>
+    </artifact>
+    <artifact classifier='osgi.bundle' id='fr.n7.petriNet.toTina' version='1.0.0.202205171550'>
+      <properties size='1'>
+        <property name='download.size' value='4502'/>
+      </properties>
+    </artifact>
+  </artifacts>
+</repository>

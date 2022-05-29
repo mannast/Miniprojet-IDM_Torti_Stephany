@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.n7.featureSirius_1.0.0.202205171548.jar" id="fr.n7.featureSirius" version="1.0.0.202205171548">
+      <category name="miniprojet"/>
+   </feature>
+   <feature url="features/fr.n7.featureXtext_1.0.0.202205171548.jar" id="fr.n7.featureXtext" version="1.0.0.202205171548">
+      <category name="xtext"/>
+   </feature>
+   <feature url="features/fr.n7.featureAcceleo_1.0.0.202205171548.jar" id="fr.n7.featureAcceleo" version="1.0.0.202205171548">
+      <category name="acceleo"/>
+   </feature>
+   <category-def name="miniprojet" label="miniprojet"/>
+   <category-def name="xtext" label="xtext"/>
+   <category-def name="acceleo" label="acceleo"/>
+</site>

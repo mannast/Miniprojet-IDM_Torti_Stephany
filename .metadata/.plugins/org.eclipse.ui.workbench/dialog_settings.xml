@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.pde.ui.featureExportWizard"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.pde.ui.PluginDevelopment"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/home/n7student/Downloads"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.petriNet.exemples"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.simplePDL.exemples"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.simplepdl2petrinetATL"/>
+			<item value="/home/n7student/eclipse-workspace2/fr.n7.SimplePDL2PetriNetEMF"/>
+			<item value="/home/n7student/eclipse-workspace2/fr.n7.petriNet/src/petrinet"/>
+			<item value="/home/n7student/eclipse-workspace2/fr.n7.simplePDL/src/simplepdl"/>
+			<item value="/home/n7student/Downloads/petrinet/petrinet"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.simplepdl2petrinetEMF/src/simplepdl2petrinetEMF"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.petriNet"/>
+			<item value="/home/n7student/Documents/2A/2eme periode/Ingenierie des modeles/Projet/N7_IDM_Project-main/fr.n7.simplePDL"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.pde.ui.NewFeatureProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.pde.PDE"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="-74"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="1107"/>
+		<item key="DIALOG_HEIGHT" value="712"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+	</section>
+	<section name="EditorSelectionDialog">
+		<item key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION" value=".PDL1"/>
+		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="false"/>
+		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="fr.n7.PDL1"/>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="false"/>
+		<item key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID" value="false"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/home/n7student/Downloads/petrinet"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_WIDTH" value="525"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_HEIGHT" value="574"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.ui.internal.quickaccess.QuickAccessDialogDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+		<list key="orderedElements">
+			<item value="org.eclipse.xtext.ui.XtextCallHierarchy"/>
+		</list>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textEntries">
+			<item value="1"/>
+		</list>
+		<list key="textArray">
+			<item value=".xtext"/>
+		</list>
+	</section>
+</section>

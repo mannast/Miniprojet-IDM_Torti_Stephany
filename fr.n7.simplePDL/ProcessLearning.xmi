@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    name="Process">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.2"
+      name="Teach">
+    <need nbResources="1"
+        resource="//@processElements.3"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.2"
+      name="Learn">
+    <need nbResources="1"
+        resource="//@processElements.4"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:Resource"
+      name="Teacher"
+      nbAvailableResources="3"
+      needs="//@processElements.0/@need.0"/>
+  <processElements
+      xsi:type="simplepdl:Resource"
+      name="Student 3"
+      needs="//@processElements.1/@need.0"/>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.6"
+      linksToSuccessors="//@processElements.6"
+      name="Sleep"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.5"
+      successor="//@processElements.5"/>
+</simplepdl:Process>

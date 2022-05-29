@@ -1,0 +1,17 @@
+process Restaurant {
+    create 4 of chef
+    create 7 of serveur
+    task cuisiner {
+        need 3 of chef
+    }
+    
+    task service {
+        need 5 of serveur
+    }
+    
+    dep finishToStart from cuisiner to service
+    
+    note "comment cuisiner un ragout" for cuisiner
+    note "gérer un restaurant" for cuisiner,service
+}
+

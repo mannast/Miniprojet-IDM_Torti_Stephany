@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      name="Teach">
+    <need nbResources="1"
+        resource="//@processElements.3"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      name="Learn">
+    <need resource="//@processElements.4"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"/>
+  <processElements
+      xsi:type="simplepdl:Resource"
+      name="Teacher"
+      nbAvailableResources="3"
+      needs="//@processElements.0/@need.0"/>
+  <processElements
+      xsi:type="simplepdl:Resource"
+      name="Student 3"
+      needs="//@processElements.1/@need.0"/>
+</simplepdl:Process>

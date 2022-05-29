@@ -1,0 +1,42 @@
+[comment encoding = UTF-8 /]
+[module toTina('http://petrinet')]
+
+
+[template public petriNetToTina(aPetriNet : PetriNet)]
+[comment @main/]
+[file (aPetriNet.name.concat('.net'), false, 'UTF-8')]
+[let places : OrderedSet(Place) = aPetriNet.getPlace() ] 
+[for (place : Place | places)]
+pl [place.name/] ([place.marking/])
+[/for]
+[/let]
+
+[let transitions: OrderedSet(Transition) = aPetriNet.getTransition() ] 
+[for (transition : Transition | transitions)]
+[transition.transitionToTina()/]
+[/for]
+[/let]
+[/file]
+[/template]
+
+
+[query public getTransition(p: PetriNet) : OrderedSet(Transition) = 
+    p.petriElements->select(e | e.oclIsTypeOf(Transition))
+        ->collect(e | e.oclAsType(Transition))
+        ->asOrderedSet()
+/]
+
+[query public getPlace(p: PetriNet) : OrderedSet(Place) = 
+    p.petriElements->select(e | e.oclIsTypeOf(Place))
+        ->collect(e | e.oclAsType(Place))
+        ->asOrderedSet()
+/]
+
+[template public transitionToTina(tr : Transition) post (trim()) ]
+tr [tr.name /] [for (arc: Arc | tr.incoming)
+            before (' ') separator (' ') after(' ')
+    ][arc.source.name /][if (arc.isReadArc)]?[arc.weight/][elseif (arc.weight > 1)]*[arc.weight/][/if][/for]->[for (arc: Arc | tr.outgoing)
+            before (' ') separator (' ') after(' ')
+    ][arc.target.name /][if (arc.isReadArc)]?[arc.weight/][elseif (arc.weight > 1)]*[arc.weight/][/if][/for]
+[/template]
+
